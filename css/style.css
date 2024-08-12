@@ -8,14 +8,14 @@
 /* global */
 
 .title p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     font-family: 'Poppins';
     color:#5E6282;
 }
 
 .title h2{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
     font-family: 'volkhov';
     color:#14183E;
@@ -32,7 +32,6 @@ body{
     background-position: center center;
     width: 100%;
     height: 100%;
-    padding:0 3%;
 }
 
 
@@ -161,19 +160,7 @@ cursor: pointer;
     border-radius: 18px, 5px, 10px, 5px;
 }
 
-.services h2{
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Open Sans';
-    color:#1E1D4C;
-}
 
-.services p{
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Poppins';
-    color:#5E6282;
-}
 
 .services .item:hover{
     background-image: url(../images/Rectangle\ 6.png);
@@ -188,40 +175,59 @@ cursor: pointer;
 
 /*destinations */
 
-.destinations .item {
+.destinations .row{
+    flex-wrap: wrap;
+    gap: 40px;
+}
    
-    text-align: center;
-    margin-bottom: 4rem;
-   
+
+
+.destination {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: fit-content;
     
+  }
+
+  .destination img {
+    width: 100%;
+    height:300px;
     
+  }
 
-}
+  .destination-info {
+    padding: 20px;
+  }
 
+  .destination-info h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color:#5E6282;
+  }
 
+  
 
-.destinations .item .caption{
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-image: url(../images/Rectangle\ 15.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   min-width: 100%;
-}
+  @media (max-width: 767px) {
+    .destination {
+      margin-bottom: 20px;
+    }
 
-.destinations .item .caption .location{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:0 20px;
-    
+    .destinations .row{
+        gap: 20px;
+    }
+  }
 
-}
+  @media (max-width: 576px) {
+    .destination img {
+      height:250px;
+      width: 250px;
+    }
+
+    .destinations .row{
+        gap: 10px;
+    }
+  }
 
 .destinations p{
     font-size: 18px;
