@@ -54,7 +54,7 @@ cursor: pointer;
 @media screen and (min-width:0) and (max-width:991px){
    
     .container{
-        max-width: fit-content;
+      min-width: min-content;
     }
 
 
@@ -69,7 +69,7 @@ cursor: pointer;
     }
 
     p{
-        font-size: 20px;
+        font-size: 40px;
         font-weight: 600;
     }
 
@@ -87,9 +87,19 @@ cursor: pointer;
         color:#14183E;
     }
 
+    nav{
+        width:100vw;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     nav ul li {
         background: #686D77;
-        width: 100%;
+        width:100vw;
         padding:.1rem 0;
         display: grid;
         justify-content: center;
@@ -297,8 +307,6 @@ cursor: pointer;
 .booking .img-item{
   width:fit-content;
   height: fit-content;
- 
-   
 }
 
 .booking .img-item h5{
@@ -354,7 +362,6 @@ cursor: pointer;
         width: 70px;
         height: 4px;
         background-color: #8A79DF;
-       
         border-radius: 2px;
 }
 
