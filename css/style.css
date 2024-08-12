@@ -7,6 +7,10 @@
 
 /* global */
 
+
+   
+  
+
 .title p {
     font-size: 20px;
     font-weight: 600;
@@ -48,6 +52,41 @@ cursor: pointer;
 
 
 @media screen and (min-width:0) and (max-width:991px){
+   
+    .container{
+        max-width: fit-content;
+    }
+
+
+     i{
+        font-size: large;
+        font-weight: bold;
+    }
+
+    *{
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .title p {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Poppins';
+        color:#5E6282;
+    }
+    
+    .title h2{
+        font-size: 60px;
+        font-weight: 700;
+        font-family: 'volkhov';
+        color:#14183E;
+    }
+
     nav ul li {
         background: #686D77;
         width: 100%;
@@ -176,7 +215,6 @@ cursor: pointer;
 /*destinations */
 
 .destinations .row{
-    flex-wrap: wrap;
     gap: 40px;
 }
    
@@ -187,6 +225,7 @@ cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: fit-content;
+    height: fit-content;
     
   }
 
@@ -219,11 +258,7 @@ cursor: pointer;
   }
 
   @media (max-width: 576px) {
-    .destination img {
-      height:250px;
-      width: 250px;
-    }
-
+  
     .destinations .row{
         gap: 10px;
     }
