@@ -36,6 +36,7 @@ body{
     background-position: center center;
     width: 100%;
     height: 100%;
+   
 }
 
 
@@ -52,25 +53,30 @@ cursor: pointer;
 
 
 @media screen and (min-width:0) and (max-width:991px){
+
+
+    a{
+        font-size: larger !important;
+        font-weight: bolder !important;
+    }
+
+
+    
    
     .container{
-      min-width: min-content;
+      width: fit-content;
     }
 
 
      i{
-        font-size: large;
-        font-weight: bold;
+        font-size: large !important;
+        font-weight: bold !important;
     }
 
-    *{
-        font-size: larger;
-        font-weight: bolder;
-    }
-
+    
     p{
-        font-size: 40px;
-        font-weight: 600;
+        font-size: 25px !important;
+        font-weight: 600 !important;
     }
 
     .title p {
@@ -147,7 +153,20 @@ cursor: pointer;
         
     }
 
+
+    .booking .row {
+        justify-content: center;
+        display: grid;
+        align-items: center;
+    }
+
+    .booking .book-caption,.booking .img-item{
+        width: 100%;
+    }
    
+    .booking .book-caption .item{
+      padding: 1rem 0;
+    }
 }
 
 /*header*/
@@ -224,23 +243,19 @@ cursor: pointer;
 
 /*destinations */
 
-.destinations .row{
-    gap: 40px;
-}
-   
+
 
 
 .destination {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: fit-content;
-    height: fit-content;
+   
     
   }
 
   .destination img {
-    width: 100%;
+   width: 100%;
     height:300px;
     
   }
@@ -255,24 +270,6 @@ cursor: pointer;
     color:#5E6282;
   }
 
-  
-
-  @media (max-width: 767px) {
-    .destination {
-      margin-bottom: 20px;
-    }
-
-    .destinations .row{
-        gap: 20px;
-    }
-  }
-
-  @media (max-width: 576px) {
-  
-    .destinations .row{
-        gap: 10px;
-    }
-  }
 
 .destinations p{
     font-size: 18px;
