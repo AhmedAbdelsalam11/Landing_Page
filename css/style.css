@@ -54,19 +54,15 @@ cursor: pointer;
 
 @media screen and (min-width:0) and (max-width:991px){
 
+    .container{
+      width: min-content;
+    }
+
 
     a{
         font-size: larger !important;
         font-weight: bolder !important;
     }
-
-
-    
-   
-    .container{
-      width: fit-content;
-    }
-
 
      i{
         font-size: large !important;
@@ -98,9 +94,9 @@ cursor: pointer;
     }
 
     nav .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
     }
 
     nav ul li {
@@ -111,8 +107,8 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         border: solid 1px #fff !important;
-        font-size: 18px;
-        font-weight: 500;
+        font-size: larger !important;
+        font-weight: bolder !important;
         font-family: 'Poppins';
         color: #fff;
         border-radius: .5rem;
