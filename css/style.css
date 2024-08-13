@@ -54,9 +54,15 @@ cursor: pointer;
 
 @media screen and (min-width:0) and (max-width:991px){
 
-    .container{
-      width: fit-content;
-    }
+    
+
+    nav ul a{
+        color: #212832 !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        font-family: 'Google Sans' !important;
+        cursor: pointer;
+        }
 
 
     a{
@@ -90,7 +96,7 @@ cursor: pointer;
     }
 
     nav{
-        width:100vw;
+        width:100%;
     }
 
     nav .container {
@@ -101,7 +107,7 @@ cursor: pointer;
 
     nav ul li {
         background: #686D77;
-        width:100vw;
+        width:100%;
         padding:.1rem 0;
         display: grid;
         justify-content: center;
@@ -163,6 +169,19 @@ cursor: pointer;
     .booking .book-caption .item{
       padding: 1rem 0;
     }
+
+
+    .booking .mask{
+        background-image: url(../images/Rectangle\ 18.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center center;
+        width: fit-content;
+        position: absolute;
+        top: 53%;
+        right: 0%;
+        
+     }
 }
 
 /*header*/
@@ -327,11 +346,11 @@ cursor: pointer;
 .booking .mask{
    background-image: url(../images/Rectangle\ 18.png);
    background-repeat: no-repeat;
-   background-size:cover;
+   background-size:contain;
    background-position: center center;
    width: fit-content;
    position: absolute;
-   top: 55%;
+   top: 54%;
    right: 0%;
    
 }
@@ -440,6 +459,7 @@ cursor: pointer;
     background-position: center center;
     position: relative;
     text-align: center;
+    margin: auto;
 }
 
 
