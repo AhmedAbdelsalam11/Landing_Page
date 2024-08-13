@@ -55,7 +55,7 @@ cursor: pointer;
 @media screen and (min-width:0) and (max-width:991px){
 
     .container{
-      width: min-content;
+      width: fit-content;
     }
 
 
